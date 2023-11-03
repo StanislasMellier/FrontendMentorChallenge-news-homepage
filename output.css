@@ -538,9 +538,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 375px) {
   .container {
-    max-width: 640px;
+    max-width: 375px;
   }
 }
 
@@ -675,8 +675,16 @@ video {
   clear: none;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-\[90px\] {
+  margin-top: 90px;
 }
 
 .box-border {
@@ -776,6 +784,39 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-\[510px\] {
+  height: 510px;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-\[1110px\] {
+  width: 1110px;
+}
+
+.w-\[350px\] {
+  width: 350px;
+}
+
+.w-\[730px\] {
+  width: 730px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-min {
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .flex-shrink {
@@ -1714,9 +1755,28 @@ video {
   border-style: none;
 }
 
+.border-off-white {
+  --tw-border-opacity: 1;
+  border-color: hsl(36 100% 99% / var(--tw-border-opacity));
+}
+
+.border-opacity-50 {
+  --tw-border-opacity: 0.5;
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-soft-red {
+  --tw-bg-opacity: 1;
+  background-color: hsl(5 85% 63% / var(--tw-bg-opacity));
+}
+
+.bg-very-dark-blue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(240 100% 5% / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -1829,6 +1889,44 @@ video {
      object-fit: scale-down;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-\[1\.9rem\] {
+  padding-top: 1.9rem;
+  padding-bottom: 1.9rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.pt-\[2\.25rem\] {
+  padding-top: 2.25rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1889,8 +1987,41 @@ video {
   font-family: Inter, serif;
 }
 
+.text-\[13px\] {
+  font-size: 13px;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
+}
+
+.text-\[2\.5rem\] {
+  font-size: 2.5rem;
+}
+
+.text-\[3\.5rem\] {
+  font-size: 3.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-extralight {
+  font-weight: 200;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .uppercase {
@@ -1961,6 +2092,18 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.leading-\[1\] {
+  line-height: 1;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.tracking-\[0\.30em\] {
+  letter-spacing: 0.30em;
+}
+
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
 }
@@ -1968,6 +2111,21 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-off-white {
+  --tw-text-opacity: 1;
+  color: hsl(36 100% 99% / var(--tw-text-opacity));
+}
+
+.text-soft-orange {
+  --tw-text-opacity: 1;
+  color: hsl(35 77% 62% / var(--tw-text-opacity));
+}
+
+.text-very-dark-blue {
+  --tw-text-opacity: 1;
+  color: hsl(240 100% 5% / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2014,6 +2172,10 @@ video {
 .subpixel-antialiased {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.opacity-80 {
+  opacity: 0.8;
 }
 
 .bg-blend-normal {
@@ -2293,14 +2455,14 @@ video {
   src: url(./assets/fonts/Inter-VariableFont_slnt,wght.ttf);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 375px) {
   .sm\:container {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 375px) {
     .sm\:container {
-      max-width: 640px;
+      max-width: 375px;
     }
   }
 
@@ -2351,7 +2513,7 @@ video {
   text-align: center;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 375px) {
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -2363,4 +2525,8 @@ video {
       paint-order: markers;
     }
   }
+}
+
+.\[\&_li\]\:ml-11 li {
+  margin-left: 2.75rem;
 }

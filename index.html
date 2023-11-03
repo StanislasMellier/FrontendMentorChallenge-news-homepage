@@ -11,79 +11,106 @@
 
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 	</head>
-	<body class="font-Inter">
-		<header class="flex content-between">
-			<div class="logo">
-				<img src="assets/images/logo.svg" alt="" />
-			</div>
-			<nav>
-				<ul class="flex">
-					<li>Home</li>
-					<li>New</li>
-					<li>Popular</li>
-					<li>Trending</li>
-					<li>Categories</li>
-				</ul>
-			</nav>
-		</header>
+	<body
+		class="font-Inter font-normal text-very-dark-blue flex justify-center min-h-screen text-[15px]"
+	>
+		<div class="w-[1110px] mt-[90px]">
+			<header class="flex justify-between mb-14">
+				<div class="logo">
+					<img src="assets/images/logo.svg" alt="" />
+				</div>
+				<nav class="flex">
+					<ul class="flex items-center [&_li]:ml-11">
+						<li>Home</li>
+						<li>New</li>
+						<li>Popular</li>
+						<li>Trending</li>
+						<li>Categories</li>
+					</ul>
+				</nav>
+			</header>
 
-		<main>
-			<section>
-				<picture>
-					<source
-						media="(min-width: 376px)"
-						srcset="./assets/images/image-web-3-desktop.jpg"
-					/>
-					<img src="assets/images/image-web-3-mobile.jpg" alt="" />
-				</picture>
-				<div>The Bright Future of Web 3.0?</div>
-				<div>
-					<p>
-						We dive into the next evolution of the web that claims to put the power of
-						the platforms back into the hands of the people. But is it really fulfilling
-						its promise?
-					</p>
-					<a href="">Read more</a>
-				</div>
-			</section>
-			<section>
-				<div>New</div>
-				<div>
-					<span>Hydrogen VS Electric Cars</span>
-					<p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-				</div>
-				<div>
-					<span>The Downsides of AI Artistry</span>
-					<p>What are the possible adverse effects of on-demand AI image generation?</p>
-				</div>
-				<div>
-					<span>Is VC Funding Drying Up?</span>
-					<p>
-						Private funding by VC firms is down 50% YOY. We take a look at what that
-						means.
-					</p>
-				</div>
-			</section>
-		</main>
-		<footer>
-			<div>
+			<main class="flex justify-between h-[510px]">
+				<section class="flex flex-col w-[730px]">
+					<picture>
+						<source
+							media="(min-width: 376px)"
+							srcset="./assets/images/image-web-3-desktop.jpg"
+						/>
+						<img src="assets/images/image-web-3-mobile.jpg" alt="" />
+					</picture>
+					<div class="flex pt-[2.25rem]">
+						<div class="font-extrabold text-[3.5rem] leading-[1] w-1/2 pr-8">
+							The Bright Future of Web 3.0?
+						</div>
+						<div class="w-1/2 px-4 flex flex-col justify-between">
+							<p>
+								We dive into the next evolution of the web that claims to put the
+								power of the platforms back into the hands of the people. But is it
+								really fulfilling its promise?
+							</p>
+							<a
+								href="/"
+								class="text-off-white w-min whitespace-nowrap py-4 px-9 bg-soft-red uppercase tracking-[0.30em] text-[13px]"
+								>Read more</a
+							>
+						</div>
+					</div>
+				</section>
+				<section class="bg-very-dark-blue text-off-white w-[350px] px-6 py-[1.9rem]">
+					<div class="text-soft-orange text-[2.5rem] leading-none font-bold">New</div>
+					<div class="py-8">
+						<span class="font-bold text-xl">Hydrogen VS Electric Cars</span>
+						<p class="mt-2 font-extralight opacity-80">
+							Will hydrogen-fueled cars ever catch up to EVs?
+						</p>
+					</div>
+					<div class="w-full border-b border-opacity-50 border-off-white"></div>
+
+					<div class="py-8">
+						<span class="font-bold text-xl">The Downsides of AI Artistry</span>
+						<p class="mt-2 font-extralight">
+							What are the possible adverse effects of on-demand AI image generation?
+						</p>
+					</div>
+					<div class="w-full border-b border-opacity-50 border-off-white"></div>
+
+					<div class="py-8">
+						<span class="font-bold text-xl">Is VC Funding Drying Up?</span>
+						<p class="mt-2 font-extralight">
+							Private funding by VC firms is down 50% YOY. We take a look at what that
+							means.
+						</p>
+					</div>
+				</section>
+			</main>
+			<footer class="flex">
 				<img src="" alt="" />
 				<div>
-					<span>01</span>
-					<span> Reviving Retro PCs </span>
-					<p>What happens when old PCs are given modern upgrades?</p>
+					<img src="assets/images/image-retro-pcs.jpg" alt="" />
+					<div>
+						<span>01</span>
+						<span> Reviving Retro PCs </span>
+						<p>What happens when old PCs are given modern upgrades?</p>
+					</div>
 				</div>
 				<div>
-					<span>02</span>
-					<span>Top 10 Laptops of 2022</span>
-					<p>Our best picks for various needs and budgets.</p>
+					<img src="assets/images/image-top-laptops.jpg" alt="" />
+					<div>
+						<span>02</span>
+						<span>Top 10 Laptops of 2022</span>
+						<p>Our best picks for various needs and budgets.</p>
+					</div>
 				</div>
 				<div>
-					<span>03</span>
-					<span>The Growth of Gaming</span>
-					<p>How the pandemic has sparked fresh opportunities.</p>
+					<img src="assets/images/image-gaming-growth.jpg" alt="" />
+					<div>
+						<span>03</span>
+						<span>The Growth of Gaming</span>
+						<p>How the pandemic has sparked fresh opportunities.</p>
+					</div>
 				</div>
-			</div>
-		</footer>
+			</footer>
+		</div>
 	</body>
 </html>
